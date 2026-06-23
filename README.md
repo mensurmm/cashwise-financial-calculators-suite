@@ -1,70 +1,122 @@
-# CashWise —  cashwise-financial-calculators-suite - Includes interest, FD/RD, VAT/excise calculators
+# CashWise
 
-Interactive collection of small HTML/JS calculators for personal finance: simple & compound interest, fixed/recurring deposits, VAT/excise calculations, and more.
+## Beautiful, accessible finance tools for everyday money decisions
 
-Live demo: Deploy this repository to GitHub Pages to host a live demo.
+**CashWise** is a lightweight, static web app built with plain HTML, CSS, and JavaScript. It brings together a suite of interactive calculators for personal finance, savings, taxes, and investment planning — all designed for fast access, easy navigation, and real-time results.
 
-Features
-- Friendly single-file demos using plain HTML, CSS and vanilla JS
-- No build step required — static site ready for GitHub Pages
-- Mobile-friendly styles and a small slideshow script
+---
 
-Files of interest
-- [index.html](index.html) — Home and navigation
-- [simple-interest.html](simple-interest.html) / simple-interest.js — Simple interest calculator
-- [compound-interest.html](compound-interest.html) / compound-interest.js — Compound interest calculator
-- [fixed-deposit.js](fixed-deposit.js) and [recurring-deposit.js](recurring-deposit.js) — FD and RD helpers
-- [personal-income.js](personal-income.js) and [Personal-income.html](Personal-income.html) — Income tools
-- [style.css](style.css) — Styles used across pages
+## Why CashWise?
 
-Table of contents
-1. Usage
-2. Run locally
-3. Deploy to GitHub (manual)
-4. Deploy to GitHub Pages (CI automated)
-5. Contributing
-6. License
+- **Instant financial clarity**: get fast answers for interest, deposits, VAT, excise tax, and income tax.
+- **No install required**: open the files in any modern browser or host as a static site.
+- **Mobile-friendly interface**: responsive layout and clean navigation for desktop and mobile.
+- **Deployment ready**: includes a GitHub Pages workflow for automated publishing.
 
-Usage
-- Open any of the HTML files in a browser to try the calculators locally.
+---
 
-Run locally
-Use a minimal HTTP server (recommended to avoid CORS/file issues):
+## What’s included
+
+### Main navigation
+- `index.html` — home page with slideshow highlights and quick access to every calculator.
+- `about.html` — project story, mission, and feature summary.
+
+### Banking and savings tools
+- `simple-interest.html` / `simple-interest.js` — calculate simple interest, principal, rate, and time.
+- `compound-interest.html` / `compound-interest.js` — estimate compound growth with configurable frequency.
+- `fd.html` / `fixed-deposit.js` — fixed deposit helper for secure savings projections.
+- `rd.html` / `recurring-deposit.js` — recurring deposit growth calculator for regular savings.
+
+### Tax and compliance tools
+- `vat.html` / `vat.js` — VAT calculator for taxable sales and inclusive/exclusive pricing.
+- `excise.html` / `excise.js` — excise tax calculator for custom tax scenarios.
+- `Personal-income.html` / `personal-income.js` — personal income tax planning.
+
+### Investment planning
+- `investement.html` / `investement.js` — equity growth and investment scenario modeling.
+
+### Shared assets
+- `style.css` — global styling for the site.
+- `slideshow.js` — homepage slideshow behavior.
+- `news.js` — dynamic news section on the homepage.
+
+---
+
+## Features
+
+- Full static website with single-file HTML pages
+- Clean, modern navigation and dropdown menus
+- Realtime calculation results without page refresh
+- GitHub Pages ready via `.github/workflows/pages.yml`
+- Simple deployment model with no dependencies
+- Responsive layout for desktop and mobile viewing
+
+---
+
+## How to use
+
+### Option 1: Open locally
+1. Open `index.html` in your browser.
+2. Click any calculator from the navigation menu.
+3. Enter values and view results instantly.
+
+### Option 2: Run a local server (recommended)
 
 ```bash
-# using Python 3
+# Python 3
 python -m http.server 8000
 
-# or using npm serve
+# or using npm
 npx serve .
 ```
 
-Then open http://localhost:8000 in your browser.
+Open `http://localhost:8000` in your browser.
 
-Deploy to GitHub (manual)
-1. Create a new repository on GitHub named `CashWise` (or your preferred name).
-2. Initialize git locally (if not already), add files and push:
+---
+
+## Deployment
+
+### Deploy to GitHub
+1. Create a GitHub repository for this project.
+2. Run the commands below from the project folder:
 
 ```bash
 git init
-git add --all
-git commit -m "Initial commit — CashWise personal finance calculators"
+git add .
+git commit -m "Add CashWise finance calculator suite"
 git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
 git push -u origin main
 ```
 
-Deploy to GitHub Pages (automated via Actions)
-- This repository includes a workflow at `.github/workflows/pages.yml` that publishes the repository root to GitHub Pages on each push to `main`.
-- After the first successful Actions run, enable GitHub Pages in the repository settings and select the `gh-pages` branch (if required).
+### Deploy to GitHub Pages
+This repository already includes a workflow at `.github/workflows/pages.yml` that deploys the repository root to the `gh-pages` branch on every push to `main`.
 
-Contributing
-- Contributions and improvements are welcome. Create issues for bugs or feature requests.
+1. Push your code to GitHub.
+2. Enable GitHub Pages in repository settings.
+3. Select `gh-pages` as the publish branch if needed.
 
-License
-- Add a license file if you want to open-source this project (MIT is a common choice).
+---
 
-Next steps I can take for you
-- Initialize the local git repository and make the first commit
-- Create the GitHub repository using the GitHub CLI (`gh`) if you want me to prepare the command
-- Push and trigger the Pages workflow (you'll need to run `git push` locally with your credentials)
+## Customization ideas
+
+- Add a **dark theme** toggle for night-mode browsing.
+- Expand with a **loan calculator** or **EMI planner**.
+- Add **chart visualizations** for deposit growth and investment returns.
+- Improve accessibility with better keyboard navigation and form labels.
+
+---
+
+## Contributing
+
+Contributions are welcome. Whether you want to add new calculators, improve the design, or polish the documentation, the project is ready for collaboration.
+
+- Create an issue for bug reports or ideas.
+- Submit a pull request with improvements.
+- Keep the site static and dependency-free for easiest deployment.
+
+
+
+## Project summary
+
+CashWise is a compact financial toolkit built for learners, entrepreneurs, and anyone who needs instant, accurate money calculations. It makes everyday financial planning easy with a friendly interface and a static, lightweight architecture.
