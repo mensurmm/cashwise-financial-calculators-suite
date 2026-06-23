@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash-Wise/Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <h1><img src="logo.png" id="logo" alt="" > <a href="index.html" id="logoh1">Cash Wise</a></h1>
+      <nav>
+        <ul class="navbar">
+          <!-- Home Link -->
+          <li><a href="index.html">Home</a></li>
+
+          <!-- Banking Calculations Dropdown -->
+          <li class="dropdown">
+            <a href="#">Banking Calculations ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="simple-interest.html">Simple Interest</a></li>
+              <li><a href="compound-interest.html">Compound Interest</a></li>
+              <li><a href="fd.html">Fixed Deposit</a></li>
+              <li><a href="rd.html">Recurring Deposit</a></li>
+            </ul>
+          </li>
+
+          <!-- Tax Calculations Dropdown -->
+          <li class="dropdown">
+            <a href="#">Tax Calculations ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="vat.html">VAT Calculator</a></li>
+              <li><a href="excise.html">Excise Tax Calculator</a></li>
+              <li><a href="Personal-income.html">Personal Income Tax</a></li>
+            </ul>
+          </li>
+
+          <!-- Investment Calculations Dropdown -->
+          <li class="dropdown">
+            <a href="#">Investment Calculations ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="investement.html">Equity Growth</a></li>
+            </ul>
+          </li>
+
+          <!-- About -->
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="slideshow-container">
+        
+        <!-- Slideshow 1 -->
+          <div class="slide active">
+            <img src="https://png.pngtree.com/background/20230617/original/pngtree-pastel-calculator-coins-and-text-illustration-depicting-tax-duty-and-allowances-picture-image_3706946.jpg" alt="">
+            <div class="caption">
+              <h2>Calculate your Excise tax</h2>
+              <p>Calculate smarter, not harder</p>
+              <a href="excise.html"><button class="shortbtn">TAX Calculator</button></a>
+              </div>
+          </div> 
+        <!-- Slideshow 2 -->
+          <div class="slide">
+            <img src="https://static.vecteezy.com/system/resources/previews/025/876/337/large_2x/gold-bar-with-stocks-graph-representing-financial-investment-gold-stock-market-wealth-money-trade-exchange-generative-ai-free-photo.jpeg" alt="">
+            <div class="caption">
+              <h2>Plan your Investment</h2>
+               <p>Every smart investment begins with clarity calculate today so you can decide confidently tomorrow</p>
+              <a href="investement.html"><button class="shortbtn">INVESTEMENT PLAN</button></a>
+              </div>
+          </div>
+        <!-- Slideshow 3 -->
+          <div class="slide">
+            <img src="https://www.raiffeisen.al/content/dam/rbi/retail/eu/al/individuals/unsecured-loans/Kredi-me-depozite.jpg.transform.rbifw.jpg" alt="">
+            <div class="caption">
+              <h2>Calculate your Interest</h2>
+             <p>"Understand your growth calculate your interest with precision and clarity."</p>
+              <a href="compound-interest.html"><button class="shortbtn">Interest Calculator</button></a>
+              </div>
+          </div>
+           <div class="slide">
+            <img src="https://media.citizen.co.za/wp-content/uploads/2023/09/increasing-VAT.jpg" alt="">
+            <div class="caption">
+              <h2>Calculate your VAT</h2>
+              <p>Accurate VAT starts with accurate calculations simplify your numbers today.</p>
+              <a href="vat.html"><button class="shortbtn">VAT Calculator</button></a>
+              </div>
+          </div>
+          <div class="slide">
+            <img src=" https://images.kitco.com/img/height_756,width_1340/icms/f67efb71-b53a-411f-8c44-a3b0b94fee3f.jpeg" alt="">
+            <div class="caption">
+              <h2>Explore about Recurring proft</h2>
+              <p>Watch your savings grow one contribution, one interest cycle at a time.</p>
+              <a href="rd.html"><button class="shortbtn">RD Calculator</button></a>
+              </div>
+             
+          </div>
+           <!-- Controls -->
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+      <!-- Dots -->
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </div>
+      </div>
+    </main>
+    
+    <section id="latest-news">
+        <h2>Latest Banking & Financial News</h2>
+          <ul id="news-list"></ul>
+    </section>
+    
+   <footer id="page-footer">
+  <div class="footer-column">
+    <h3>Cash-Wise</h3>
+    <p>
+      Your Smart Financial Toolkit CashWise is an interactive web application designed to simplify everyday financial and mathematical tasks. 
+      It provides a suite of easy-to-use calculators, including VAT, income tax, simple interest, compound interest,
+      fixed deposit (FD), recurring deposit (RD).  With a clean design, responsive layout,
+      and real-time results powered by HTML, CSS, and JavaScript, CashWise helps users make quick, accurate financial
+      decisions while learning the basics of money management.
+    </p>
+  </div>
+
+  <div class="footer-column">
+    <h4><i class="fa-regular fa-address-book"></i> Contact Us</h4>
+    <p><i class="fa-solid fa-phone"></i> +251912456879</p>
+    <p><i class="fa-solid fa-phone"></i> +251946767676</p>
+    <p><i class="fa-solid fa-at"></i> info@CashWise.com</p>
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <a href="https://maps.app.goo.gl/2eYd3Rv9yVuvz9ZG9" target="_blank" rel="noopener noreferrer">
+      <i class="fa-solid fa-location-crosshairs"></i> 4 Kilo, Addis Ababa
+    </a>
+  </div>
+
+  <div class="footer-column">
+    <h4><i class="fa-solid fa-business-time"></i> Opening Times</h4>
+    <p>Mon–Fri: 2:00 LT – 10:00 LT</p>
+  </div>
+</footer>
+
+  <script>
+    (function(){
+      if(!window.chatbase || window.chatbase("getState") !== "initialized"){
+        window.chatbase = (...arguments) => {
+          if(!window.chatbase.q){ window.chatbase.q = [] }
+          window.chatbase.q.push(arguments)
+        };
+        window.chatbase = new Proxy(window.chatbase,{
+          get(target,prop){
+            if(prop === "q"){ return target.q }
+            return (...args) => target(prop,...args)
+          }
+        })
+      }
+      const onLoad = function(){
+        const script = document.createElement("script");
+        script.src = "https://www.chatbase.co/embed.min.js";
+        script.id = "vIEJmxcO_3Qg5LGvF4Snf";  <!-- your bot ID -->
+        script.domain = "www.chatbase.co";
+        document.body.appendChild(script);
+      };
+      if(document.readyState === "complete"){ onLoad() }
+      else { window.addEventListener("load", onLoad) }
+    })();
+  </script>
+    <script src="slideshow.js"></script>
+    <script src="news.js"></script>
+  </body>
+</html>

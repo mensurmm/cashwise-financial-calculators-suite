@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash-Wise/excisetax</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+      <header>
+      <h1><img src="logo.png" id="logo" alt=""> Cash Wise</h1>
+      <nav>
+        <ul class="navbar">
+          <!-- Home Link -->
+          <li><a href="index.html">Home</a></li>
+
+          <!-- Banking Calculations Dropdown -->
+          <li class="dropdown">
+            <a href="#">Banking Calculations ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="simple-interest.html">Simple Interest</a></li>
+              <li><a href="compound-interest.html">Compound Interest</a></li>
+              <li><a href="fd.html">Fixed Deposit</a></li>
+              <li><a href="rd.html">Recurring Deposit</a></li>
+            </ul>
+          </li>
+
+          <!-- Tax Calculations Dropdown -->
+          <li class="dropdown">
+            <a href="#">Tax Calculations ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="vat.html">VAT Calculator</a></li>
+              <li><a href="excise.html">Excise Tax Calculator</a></li>
+              <li><a href="Personal-income.html">Personal Income Tax</a></li>
+            </ul>
+          </li>
+
+          <!-- Investment Calculations Dropdown -->
+          <li class="dropdown">
+            <a href="#">Investment Calculations ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="investement.html">Equity Growth</a></li>
+            </ul>
+          </li>
+
+          <!-- About -->
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="rule-container">
+      <div>
+        <img src="excise tax img.png" alt="Logo 1" />
+      </div>
+      <div>
+        <img
+          src="https://www.mor.gov.et/assets/logo-CFqM3c96.png"
+          alt="Logo 2"
+        />
+      </div>
+      <div class="rule-text">
+        <h2>Excise Tax Ethiopia</h2>
+
+        <p>
+          Excise tax in Ethiopia is a special tax imposed on selected goods and
+          services that are considered either luxury items, harmful to health or
+          the environment, or goods whose consumption the government wants to
+          regulate. The tax applies to both locally manufactured products and
+          imported goods. It is governed by Excise Tax Proclamation No.
+          1186/2020 and its amendment Proclamation No. 1287/2023, which updated
+          tax rates and expanded or reduced the list of excisable items. <br />
+          The main goal of excise tax is not just revenue generation but also
+          discouraging the use of harmful or non-essential products, such as
+          alcohol, tobacco, old or highly polluting vehicles, and single-use
+          plastics. At the same time, the government uses excise tax to
+          encourage healthier consumption patterns and protect local industries.
+        </p>
+        The tax base differs depending on the origin of the product
+        <ul type="none">
+          <li>
+            For imported goods, excise is calculated on the customs value plus
+            customs duty.
+          </li>
+          <li>
+            For locally produced goods, it is calculated on the ex-factory price
+            before VAT.
+          </li>
+        </ul>
+        <p>Major categories under excise tax include:
+            <ul type="none">
+                <li>Alcoholic drinks, beer, wine, and spirits.</li>
+                <li>Tobacco and cigarettes, which have both percentage and per-kilogram taxes.</li>
+                <li>Sugar-based and fatty foods, sweets, chocolates, and certain oils.</li>
+                <li>Vehicles, especially used cars or large-engine cars, which attract high excise tax to discourage environmental impact and reduce foreign currency outflow.</li>
+                <li>Plastic products, such as plastic bags and bottles.</li>
+                <li>Luxury goods like cosmetics, artificial hair, carpets, and selected textiles.</li>
+            </ul>
+                </p>
+        <p>
+          for more info Visit
+          <a href="https://www.mor.gov.et/" style="color: rgb(224, 170, 68)"
+            >Ministry of Revenue Ethiopia</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="excise-calculator">
+  <h2>Excise Tax Calculator</h2>
+  <form id="excise-form">
+    <!-- Total Price -->
+    <label for="amount">Enter Total Price:</label>
+    <input type="number" id="amount" required placeholder="Enter product price" />
+
+    <!-- Product Dropdown -->
+    <label for="product">Select Product:</label>
+    <select id="product" required>
+      <option value="beer">Beer (40%)</option>
+      <option value="tobacco">Tobacco (30%)</option>
+      <option value="evehicle">EV(0%)</option>
+      <option value="hvehicle">Hybrid vehicles(5%)</option>
+      <option value="plastic">Plastic Products (20%)</option>
+      <option value="hair">Human hair(30%)</option>
+      <option value="beuty">Beuty Products (100%)</option>
+      <option value="sugar">Sugar Products (10%)</option>
+      <option value="wine">wine (30%)</option>
+      <option value="drinks">Soft drinks(25%)</option>
+      <option value="gin">Gin/Vodka(80%)</option>
+      <option value="custom">Custom Percentage</option>
+
+    </select>
+
+    <!-- Custom Rate (only visible if "Custom" is chosen) -->
+    <div id="custom-rate-container" style="display:none;">
+      <label for="rate">Custom Excise Rate (%):</label>
+      <input type="number" id="rate" placeholder="Enter custom %" />
+    </div>
+
+    <button type="submit" class="calc-btn">Calculate Excise Tax</button>
+  </form>
+
+  <div id="excise-result" class="result-box"></div>
+</div>
+<footer id="page-footer" style="margin-top: 150px">
+      <div class="footer-column">
+        <h3>Cash-Wise</h3>
+        <p>
+          Your Smart Financial Toolkit — CashWise is an interactive web
+          application designed to simplify everyday financial and mathematical
+          tasks. It provides a suite of easy-to-use calculators, including VAT,
+          income tax, simple interest, compound interest, fixed deposit (FD),
+          recurring deposit (RD), and a scientific calculator. With a clean
+          design, responsive layout, and real-time results powered by HTML, CSS,
+          and JavaScript, CashWise helps users make quick, accurate financial
+          decisions while learning the basics of money management.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4><i class="fa-regular fa-address-book"></i> Contact Us</h4>
+        <p><i class="fa-solid fa-phone"></i> +251912456879</p>
+        <p><i class="fa-solid fa-phone"></i> +251946767676</p>
+        <p><i class="fa-solid fa-at"></i> info@CashWise.com</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a
+          href="https://maps.app.goo.gl/2eYd3Rv9yVuvz9ZG9"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-solid fa-location-crosshairs"></i> 4 Kilo, Addis Ababa
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <h4><i class="fa-solid fa-business-time"></i> Opening Times</h4>
+        <p>Mon–Fri: 2:00 LT – 10:00 LT</p>
+      </div>
+    </footer>
+    <script>
+    (function(){
+      if(!window.chatbase || window.chatbase("getState") !== "initialized"){
+        window.chatbase = (...arguments) => {
+          if(!window.chatbase.q){ window.chatbase.q = [] }
+          window.chatbase.q.push(arguments)
+        };
+        window.chatbase = new Proxy(window.chatbase,{
+          get(target,prop){
+            if(prop === "q"){ return target.q }
+            return (...args) => target(prop,...args)
+          }
+        })
+      }
+      const onLoad = function(){
+        const script = document.createElement("script");
+        script.src = "https://www.chatbase.co/embed.min.js";
+        script.id = "vIEJmxcO_3Qg5LGvF4Snf";  <!-- your bot ID -->
+        script.domain = "www.chatbase.co";
+        document.body.appendChild(script);
+      };
+      if(document.readyState === "complete"){ onLoad() }
+      else { window.addEventListener("load", onLoad) }
+    })();
+  </script>
+<script src="excise.js"></script>
+  </body>
+</html>

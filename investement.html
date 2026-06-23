@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Wise | Investment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="logo.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <h1><img src="logo.png" id="logo" alt="" /> Cash Wise</h1>
+      <nav>
+        <ul class="navbar">
+          <!-- Home Link -->
+          <li><a href="index.html">Home</a></li>
+
+          <!-- Banking Calculations Dropdown -->
+          <li class="dropdown">
+            <a href="#">Banking Calculations ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="simple-interest.html">Simple Interest</a></li>
+              <li><a href="compound-interest.html">Compound Interest</a></li>
+              <li><a href="fd.html">Fixed Deposit</a></li>
+              <li><a href="rd.html">Recurring Deposit</a></li>
+            </ul>
+          </li>
+
+          <!-- Tax Calculations Dropdown -->
+          <li class="dropdown">
+            <a href="#">Tax Calculations ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="vat.html">VAT Calculator</a></li>
+              <li><a href="excise.html">Excise Tax Calculator</a></li>
+              <li><a href="Personal-income.html">Personal Income Tax</a></li>
+            </ul>
+          </li>
+
+          <!-- Investment Calculations Dropdown -->
+          <li class="dropdown">
+            <a href="#">Investment Calculations ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="investement.html">Equity Growth</a></li>
+            </ul>
+          </li>
+
+          <!-- About -->
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="rule-container">
+      <div>
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/026/266/569/original/the-stock-market-graph-is-in-gold-color-for-business-investment-illustration-futuristic-financial-trading-chart-economic-information-growth-background-vector.jpg"
+          alt="Logo 1"
+        />
+      </div>
+      <div>
+        <img
+          src="https://avatars.mds.yandex.net/i?id=ba9cdf6739dc56e9b177a408dfd72c503bd5b779-5235401-images-thumbs&n=13"
+          alt="Logo 2"
+        />
+      </div>
+    </div>
+    <main style="max-width: 900px; margin: 40px auto; padding: 20px">
+      <section class="investement-part">
+        <h2>Investment Growth Calculator</h2>
+        <p>
+          The Investment Growth Calculator lets you explore how your money could
+          increase over time using historical company performance. Enter your
+          investment amount and holding period, and the calculator will estimate
+          potential returns based on past growth rates of leading companies such
+          as NVIDIA, Apple, and Tesla. This tool helps you visualize long-term
+          opportunities, compare different investments, and make smarter
+          financial decisions with confidence.
+        </p>
+        <br />
+        <p>
+          <b style="color: rgb(233, 174, 66)">Disclaimer:</b> The results shown
+          by this calculator are based on past market performance and are not
+          guarantees of future returns. Investments can rise or fall in value,
+          and historical data should not be relied upon as a prediction of
+          future outcomes. Please use this tool for informational purposes only
+          and consider consulting a qualified financial advisor before making
+          investment decisions.
+        </p>
+        <br />
+        <p>Here are some global companies you can simulate investments with:</p>
+        <ul>
+          <li><strong>NVIDIA (NVDA)</strong> – AI and semiconductor leader</li>
+          <li>
+            <strong>Apple (AAPL)</strong> – Consumer electronics and services
+            giant
+          </li>
+          <li>
+            <strong>Tesla (TSLA)</strong> – Electric vehicles and clean energy
+            innovator
+          </li>
+        </ul>
+        <br />
+        <section>
+          <h2>Recent Annual Growth Rates</h2>
+          <ul>
+            <li>NVIDIA → ~100% average (2023–2025)</li>
+            <li>Apple → ~5% average</li>
+            <li>Tesla → ~20% average (slowing recently)</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="investment-calculator">
+        <h2>Investment Profit Calculator</h2>
+        <form id="investment-form">
+          <label for="company">Select Company:</label>
+          <select id="company">
+            <option value="nvidia">NVIDIA</option>
+            <option value="apple">Apple</option>
+            <option value="tesla">Tesla</option>
+          </select>
+
+          <label for="amount">Investment Amount (USD):</label>
+          <input type="number" id="amount" required placeholder="e.g., 1000" />
+
+          <label for="years">Years of Holding:</label>
+          <input type="number" id="years" required placeholder="e.g., 5" />
+
+          <button type="submit" class="calc-btn">Calculate Profit</button>
+        </form>
+
+        <div id="investment-result" class="result-box"></div>
+      </section>
+    </main>
+    <footer id="page-footer">
+      <div class="footer-column">
+        <h3>Cash-Wise</h3>
+        <p>
+          Your Smart Financial Toolkit — CashWise is an interactive web
+          application designed to simplify everyday financial and mathematical
+          tasks. It provides a suite of easy-to-use calculators, including VAT,
+          income tax, simple interest, compound interest, fixed deposit (FD),
+          recurring deposit (RD), and a scientific calculator. With a clean
+          design, responsive layout, and real-time results powered by HTML, CSS,
+          and JavaScript, CashWise helps users make quick, accurate financial
+          decisions while learning the basics of money management.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4><i class="fa-regular fa-address-book"></i> Contact Us</h4>
+        <p><i class="fa-solid fa-phone"></i> +251912456879</p>
+        <p><i class="fa-solid fa-phone"></i> +251946767676</p>
+        <p><i class="fa-solid fa-at"></i> info@CashWise.com</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a
+          href="https://maps.app.goo.gl/2eYd3Rv9yVuvz9ZG9"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-solid fa-location-crosshairs"></i> 4 Kilo, Addis Ababa
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <h4><i class="fa-solid fa-business-time"></i> Opening Times</h4>
+        <p>Mon–Fri: 2:00 LT – 10:00 LT</p>
+      </div>
+    </footer>
+    <script src="investement.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash-Wise/personalincome</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+     <header>
+      <h1><img src="logo.png" id="logo" alt=""> Cash Wise</h1>
+      <nav>
+        <ul class="navbar">
+          <!-- Home Link -->
+          <li><a href="index.html">Home</a></li>
+
+          <!-- Banking Calculations Dropdown -->
+          <li class="dropdown">
+            <a href="#">Banking Calculations ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="simple-interest.html">Simple Interest</a></li>
+              <li><a href="compound-interest.html">Compound Interest</a></li>
+              <li><a href="fd.html">Fixed Deposit</a></li>
+              <li><a href="rd.html">Recurring Deposit</a></li>
+            </ul>
+          </li>
+
+          <!-- Tax Calculations Dropdown -->
+          <li class="dropdown">
+            <a href="#">Tax Calculations ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="vat.html">VAT Calculator</a></li>
+              <li><a href="excise.html">Excise Tax Calculator</a></li>
+              <li><a href="Personal-income.html">Personal Income Tax</a></li>
+            </ul>
+          </li>
+
+          <!-- Investment Calculations Dropdown -->
+          <li class="dropdown">
+            <a href="#">Investment Calculations ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="investement.html">Equity Growth</a></li>
+            </ul>
+          </li>
+
+          <!-- About -->
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main style="max-width: 900px; margin: 40px auto; padding: 20px;"></main>
+    <div class="rule-container">
+      <div>
+        <img
+          src="https://www.financialexpress.com/wp-content/uploads/2021/06/Income-Tax.jpg"
+          alt="Logo 1"
+        />
+      </div>
+      <div>
+        <img
+          src="https://www.mor.gov.et/assets/logo-CFqM3c96.png"
+          alt="Logo 2"
+        />
+      </div>
+      <div class="rule-text">
+        <h2>Personal Income Tax Ethiopia</h2>
+
+        <p>
+          Personal Income Tax in Ethiopia Earning income in Ethiopia? Whether
+          you receive a salary, work as a freelancer, or run your own business,
+          understanding Personal Income Tax (PIT) is essential. Ethiopia applies
+          a progressive tax system, with rates ranging from 0% to 35%, so higher
+          earnings are taxed at higher rates. Taxable income includes wages,
+          bonuses, allowances, rental income, and self-employment earnings. For
+          most employees, tax is automatically deducted by the employer, making
+          compliance simple. Self-employed individuals, however, must file an
+          annual return with the Ethiopian Revenue and Customs Authority (ERCA).
+          Residents are taxed on worldwide income, while non-residents are only
+          taxed on income from Ethiopian sources. Certain deductions, such as
+          pension contributions, can help reduce your taxable income.
+        </p>
+         <h3>Tax Brackets (Monthly Income)</h3>
+  <ul type="none">
+    <li>0 – 600 ETB → <strong>0%</strong> (Exempt)</li>
+    <li>601 – 1650 ETB → <strong>10%</strong> on excess over 600</li>
+    <li>1651 – 3200 ETB → <strong>15%</strong> on excess over 1650 + fixed 105 ETB</li>
+    <li>3201 – 5250 ETB → <strong>20%</strong> on excess over 3200 + fixed 367.5 ETB</li>
+    <li>5251 – 7800 ETB → <strong>25%</strong> on excess over 5250 + fixed 867.5 ETB</li>
+    <li>7801 – 10900 ETB → <strong>30%</strong> on excess over 7800 + fixed 1505 ETB</li>
+    <li>Above 10900 ETB → <strong>35%</strong> on excess over 10900 + fixed 2405 ETB</li>
+  </ul>
+          for more info Visit
+          <a href="https://www.mor.gov.et/" style="color: rgb(224, 170, 68)"
+            >Ministry of Revenue Ethiopia</a
+          >
+        </p>
+      </div>
+    </div>
+     <section class="calculator-section">
+      <h2>Income Tax Calculator</h2>
+      <form id="pit-form">
+        <label for="income">Enter Monthly Income (ETB):</label>
+        <input type="number" id="income" required placeholder="e.g., 5000">
+
+        <button type="submit" class="calc-btn">Calculate Tax</button>
+      </form>
+
+      <div id="pit-result" class="result-box"></div>
+    </section>
+  </main>
+   <footer id="page-footer">
+  <div class="footer-column">
+    <h3>Cash-Wise</h3>
+    <p>
+      Your Smart Financial Toolkit — CashWise is an interactive web application designed to simplify everyday financial and mathematical tasks. 
+      It provides a suite of easy-to-use calculators, including VAT, income tax, simple interest, compound interest,
+      fixed deposit (FD), recurring deposit (RD), and a scientific calculator. With a clean design, responsive layout,
+      and real-time results powered by HTML, CSS, and JavaScript, CashWise helps users make quick, accurate financial
+      decisions while learning the basics of money management.
+    </p>
+  </div>
+
+  <div class="footer-column">
+    <h4><i class="fa-regular fa-address-book"></i> Contact Us</h4>
+    <p><i class="fa-solid fa-phone"></i> +251912456879</p>
+    <p><i class="fa-solid fa-phone"></i> +251946767676</p>
+    <p><i class="fa-solid fa-at"></i> info@CashWise.com</p>
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <a href="https://maps.app.goo.gl/2eYd3Rv9yVuvz9ZG9" target="_blank" rel="noopener noreferrer">
+      <i class="fa-solid fa-location-crosshairs"></i> 4 Kilo, Addis Ababa
+    </a>
+  </div>
+
+  <div class="footer-column">
+    <h4><i class="fa-solid fa-business-time"></i> Opening Times</h4>
+    <p>Mon–Fri: 2:00 LT – 10:00 LT</p>
+  </div>
+</footer>
+<script src="personal-income.js"></script>
+
+  <!-- Chatbase chatbot embed -->
+  <script>
+    (function(){
+      if(!window.chatbase || window.chatbase("getState") !== "initialized"){
+        window.chatbase = (...arguments) => {
+          if(!window.chatbase.q){ window.chatbase.q = [] }
+          window.chatbase.q.push(arguments)
+        };
+        window.chatbase = new Proxy(window.chatbase,{
+          get(target,prop){
+            if(prop === "q"){ return target.q }
+            return (...args) => target(prop,...args)
+          }
+        })
+      }
+      const onLoad = function(){
+        const script = document.createElement("script");
+        script.src = "https://www.chatbase.co/embed.min.js";
+        script.id = "vIEJmxcO_3Qg5LGvF4Snf";  <!-- your bot ID -->
+        script.domain = "www.chatbase.co";
+        document.body.appendChild(script);
+      };
+      if(document.readyState === "complete"){ onLoad() }
+      else { window.addEventListener("load", onLoad) }
+    })();
+  </script>
+  <script src="personal-income.js"></script>
+  </body>
+</html>
